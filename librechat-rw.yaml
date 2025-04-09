@@ -1,0 +1,27 @@
+version: 1.2.1
+
+cache: true
+
+secureImageLinks: true
+
+# original version
+# https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/librechat-rw.yaml
+
+interface:
+  termsOfService:
+    modalAcceptance: true
+    modalTitle: "Terms of Service"
+    modalContent: |
+      # Terms of Service
+      ## Introduction
+      Welcome to LibreChat!
+  modelSelect: true
+  parameters: false
+  sidePanel: true
+  presets: false
+  prompts: true
+  bookmarks: false
+  multiConvo: false
+  agents: false
+  customWelcome: "Hey {{user.name}}! Welcome to SkillsGPT"
+  runCode: false
