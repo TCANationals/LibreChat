@@ -1,4 +1,4 @@
-version: 1.2.1
+version: 1.2.4
 
 cache: true
 
@@ -9,7 +9,7 @@ secureImageLinks: true
 
 interface:
   termsOfService:
-    modalAcceptance: true
+    modalAcceptance: false
     modalTitle: "Terms of Service"
     modalContent: |
       # Terms of Service
@@ -21,7 +21,15 @@ interface:
   presets: false
   prompts: true
   bookmarks: false
-  multiConvo: false
+  multiConvo: true
   agents: false
   customWelcome: "Hey {{user.name}}! Welcome to SkillsGPT"
   runCode: false
+
+mcpServers:
+  Time:
+    type: stdio
+    command: uvx
+    args:
+      - mcp-server-time
+    startup: false
