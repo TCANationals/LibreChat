@@ -21,7 +21,7 @@ interface:
   presets: false
   prompts: true
   bookmarks: false
-  multiConvo: true
+  multiConvo: false # ability to use multiple agents per chat
   agents: false
   customWelcome: "Hey {{user.name}}! Welcome to SkillsGPT"
   runCode: false
